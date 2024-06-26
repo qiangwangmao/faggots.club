@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const text = "xiorn";
+    const text = "reeve";
     const speed = 200; // Typing speed in milliseconds
     const pause = 2000; // Pause before deleting and re-typing in milliseconds
     const h1 = document.querySelector(".typewriter-text");
