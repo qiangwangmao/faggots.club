@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Kode Mono", monospace;
+    cursor: url("assets/rsz_cursor.png") 16 16, auto !important;
+}
+
+body {
+    background-image: url('/assets/background.png');
+    height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.navbar {
+    background-color: rgb(30, 30, 30);
+    padding: 5px 0;
+}
+
+.navbar a {
+    text-align: center;
+    margin: auto;
+    text-decoration: none;
+    color: rgb(184, 184, 184);
+}
+
+.navcontain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+p {
+    color: rgba(208, 237, 255, 0.875);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+h4 {
+    color: rgba(208, 237, 255, 0.6);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    transform: skewX(2deg);
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center content */
+    /* align-items: center; Horizontally center content */
+    gap: 7px;
+    width: 700px;
+    height: 100%; /* Ensure .bio takes full height of its container */
+    margin: auto;
+}
+
+.username {
+    border: solid;
+    border-width: 1.8px;
+    border-color: rgba(167, 249, 255, 0.4);
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(9, 12, 51, 0.2) 0%, rgba(7, 51, 44, 0.1) 100%); 
+    border-radius: 2px;
+    box-shadow: 4px 2px 8px rgba(1, 8, 41, 0.25);
+    padding: 15px;
+    display: flex;
+}
+
+.username img {
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 4px 2px 8px rgba(1, 8, 41, 0.25);
+}
+
+.username h1 {
+    height: 150px;
+    line-height: 150px; 
+    font-size: 9rem;
+    color: rgba(210, 231, 255, 0.4);
+    -webkit-text-stroke: 4px rgba(210, 231, 255, 0.4);
+    text-align: right; /* Align text to the right */
+    margin-left: auto; /* Push the h1 to the right */
+    transform: translate(25px, -11px) skewX(3deg);
+    animation: subtle_flicker 100ms linear infinite;
+}
+
+@keyframes subtle_flicker {
+    0% {
+        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15), 0px 0px 40px rgba(148, 239, 255, 0.3);
+    }
+    50% {
+        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(148, 239, 255, 0.4);
+    }
+    100% {
+        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.22), 0px 0px 40px rgba(148, 239, 255, 0.19);
+    }
+}
+
+.content {
+    border: solid;
+    border-width: 1.8px;
+    border-color: rgba(167, 249, 255, 0.4);
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(9, 12, 51, 0.2) 0%, rgba(7, 51, 44, 0.1) 100%); 
+    border-radius: 2px;
+    box-shadow: 4px 2px 8px rgba(1, 8, 41, 0.25);
+    padding: 15px;
+    display: flex;
+}
+
+.section {
+    border: solid;
+    border-width: 1.8px;
+    border-color: rgba(167, 249, 255, 0.4);
+    background: rgb(0,0,0);
+    background: linear-gradient(45deg, rgba(9, 12, 51, 0.2) 0%, rgba(7, 51, 44, 0.1) 100%); 
+    border-radius: 2px;
+    box-shadow: 4px 2px 8px rgba(1, 8, 41, 0.25);
+    padding: 15px;
+    display: flex;
+}
