@@ -15,7 +15,6 @@ body {
     background-size: cover;
 }
 
-
 .navbar {
     background-color: rgb(30, 30, 30);
     padding: 5px 0;
@@ -33,7 +32,6 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 
 p {
     color: rgba(208, 237, 255, 0.875);
@@ -83,8 +81,9 @@ h4 {
     -webkit-text-stroke: 4px rgba(210, 231, 255, 0.4);
     text-align: right; /* Align text to the right */
     margin-left: auto; /* Push the h1 to the right */
-    transform: translate(25px, -11px) skewX(3deg);
+    transform: translate(25px, 5px) skewX(3deg);
     animation: subtle_flicker 100ms linear infinite;
+    
 }
 
 @keyframes subtle_flicker {
