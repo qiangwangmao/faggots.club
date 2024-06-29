@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>@xiorn</title>
 </head>
 <body>
+    <video autoplay muted loop id="background">
+        <source src="/assets/backgrounds/codbg.mp4" type="video/mp4">
+      </video>
+
+    <div id="overlay">
+        <button id="enter-button">Click to Enter</button>
+    </div>
+    
+    <audio id="background-audio" autoplay loop>
+        <source src="assets/backgrounds/bg.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('background-audio');
+    var overlay = document.getElementById('overlay');
+    var enterButton = document.getElementById('enter-button');
+
+    enterButton.addEventListener('click', function() {
+        audio.play().then(function() {
+            overlay.classList.add('hidden');
+        }).catch(function(error) {
+            console.log("Audio playback failed: " + error);
+        });
+    });
+});
+    </script>
 
     <nav class="navbar">
         <div class="navcontain">
@@ -14,10 +43,14 @@
         </div>
     </nav>
 
+    <div id="widget-button" class="widget-button">
+        <i id="audio-icon" class="material-icons">volume_up</span>
+    </div>
+
     <div class="bio">
         <div class="username">
             <div class="logo-container">
-                <a href="https://google.com/">
+                <a href="https://discord.com/users/1186699717355262095">
                     <img src="assets/xiorn.png" alt="xiorn">
                 </a>
                 <span class="add-me-text">add me</span>
@@ -25,12 +58,24 @@
             <h1 class="typewriter-text">xiorn</h1>
             <h4>ceo</h4>
         </div>
+        <div class="widget">
+
+        </div>
         <div class="content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto neque tempore quos. Dignissimos est officiis reiciendis atque nemo, ad similique pariatur delectus sequi dicta quos expedita placeat corrupti fuga laboriosam ea iure voluptates! Eaque ut nulla quos dolorum corrupti numquam voluptas iusto consequuntur modi itaque, dolor obcaecati odio aperiam consectetur inventore commodi eos cumque officiis necessitatibus, accusantium magni earum quis sint! Sed veritatis nemo fugit fuga cupiditate hic rerum maxime ab, consectetur ex ullam minus atque assumenda facilis similique. Ex dicta maiores optio rem itaque ipsa aliquid aperiam voluptas recusandae magnam? Placeat molestias eveniet, aspernatur voluptas magnam architecto iusto cupiditate quis enim earum laudantium voluptatum expedita alias eaque, vitae pariatur dolor fugit perspiciatis doloribus! Laboriosam ipsum dignissimos nemo harum eligendi id rerum hic repellat repudiandae sunt! Ad blanditiis repudiandae dolorum explicabo, illum porro reprehenderit fugiat officia modi eveniet commodi cumque dicta doloribus placeat saepe omnis dolores distinctio tenetur sit soluta.</p>
+            <p>15</p>
+            <p>founder of faggots.club</p>
+            <p>best cc maker</p>
+            <p>discord @ pfp</p>
+            <div class="socials">
+                <a href="#"><i class="nf nf-fa-discord"></i></a>
+                <a href="#"><i class="nf nf-fa-youtube"></i></a>
+                <a href="#"><i class="nf nf-fa-twitter"></i></a>
+                <a href="#"><i class="nf nf-fa-pinterest"></i></a>
+                <a href="#"><i class="nf nf-fa-telegram"></i></a>
+            </div>
         </div>
-        <div class="section">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque pariatur accusantium necessitatibus ratione iusto reiciendis aperiam doloribus corporis beatae culpa nulla natus, fugiat ad numquam voluptas consequatur odit architecto maiores voluptate, porro recusandae ipsam! Officiis, unde fugiat ducimus labore incidunt sed molestias accusantium amet saepe fuga illum, adipisci doloribus repudiandae.</p>
-        </div>
+
+
     </div>
 
     <script src="script.js"></script>
