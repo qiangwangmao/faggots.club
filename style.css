@@ -47,6 +47,11 @@ body, html {
     overflow: hidden;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
 #overlay {
     position: fixed;
     top: 0;
@@ -124,7 +129,6 @@ h4 {
     width: 700px;
     height: 100vh; /* Ensure .bio takes full height of its container */
     margin: auto;
-    transform: translateX(20px);
 }
 
 .username {
@@ -190,13 +194,13 @@ h4 {
 
 @keyframes subtle_flicker {
     0% {
-        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15), 0px 0px 40px rgba(148, 239, 255, 0.3);
+        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.15), 0px 0px 40px rgba(148, 255, 198, 0.3);
     }
     50% {
-        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(148, 239, 255, 0.4);
+        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.2), 0px 0px 40px rgba(148, 255, 169, 0.4);
     }
     100% {
-        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.22), 0px 0px 40px rgba(148, 239, 255, 0.19);
+        text-shadow: 5px 5px 7px rgba(0, 0, 0, 0.22), 0px 0px 40px rgba(148, 255, 168, 0.19);
     }
 }
 
